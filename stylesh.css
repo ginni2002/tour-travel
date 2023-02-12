@@ -1,0 +1,230 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-weight: 4000;
+  font-family: "Roboto", sans-serif;
+}
+
+body {
+  background-image: linear-gradient(
+    to right,
+    #0c84d9 0%,
+    #12d8fa 51%,
+    #1fa2ff 100%
+  ); /* background-repeat: no-repeat;
+    background-size: 2000px 3500px;
+    background-position: center top; */
+}
+
+.akordian {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 10px;
+}
+
+.akordian-item {
+  border-radius: 10px;
+  padding: 20px;
+  margin-bottom: 20px;
+  background-color: white;
+  box-shadow: 5px 10px 18px #191919;
+}
+
+.akordian-title {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.akordian-title::after {
+  content: "+";
+  font-size: 40px;
+  margin-left: auto;
+  color: black;
+}
+
+.active-header::after {
+  content: "-";
+}
+
+.akordian-title-flights {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.akordian-title-flights::after {
+  background-image: url("airplane.png");
+  background-size: 35px 45px;
+  display: inline-block;
+  width: 35px;
+  height: 45px;
+  content: "";
+  margin-left: auto;
+}
+
+.active-header-flights::after {
+  background-image: url("airplane\ \(1\).png");
+  background-size: 35px 45px;
+  display: inline-block;
+  width: 35px;
+  height: 45px;
+  content: "";
+  color: blue;
+}
+
+.akordian-title-stays {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.akordian-title-stays::after {
+  background-image: url("home.png");
+  background-size: 35px 45px;
+  display: inline-block;
+  width: 35px;
+  height: 45px;
+  content: "";
+  margin-left: auto;
+}
+
+.active-header-stays::after {
+  background-image: url("home\ \(1\).png");
+  background-size: 35px 45px;
+  display: inline-block;
+  width: 35px;
+  height: 45px;
+  content: "";
+  color: blue;
+}
+
+.akordian-title-hotels::after {
+  background-image: url("hotel.png");
+  background-size: 35px 45px;
+  display: inline-block;
+  width: 35px;
+  height: 45px;
+  content: "";
+  margin-left: auto;
+}
+
+.active-header-hotels::after {
+  background-image: url("hotel\ \(1\).png");
+  background-size: 35px 45px;
+  display: inline-block;
+  width: 35px;
+  height: 45px;
+  content: "";
+  color: blue;
+}
+
+.akordian-title-trains::after {
+  background-image: url("train.png");
+  background-size: 35px 45px;
+  display: inline-block;
+  width: 35px;
+  height: 45px;
+  content: "";
+  margin-left: auto;
+}
+
+.active-header-trains::after {
+  background-image: url("train\ \(1\).png");
+  background-size: 35px 45px;
+  display: inline-block;
+  width: 35px;
+  height: 45px;
+  content: "";
+  color: blue;
+}
+
+.akordian-title-holidays::after {
+  background-image: url("holiday.png");
+  background-size: 35px 45px;
+  display: inline-block;
+  width: 35px;
+  height: 45px;
+  content: "";
+  margin-left: auto;
+}
+
+.active-header-holidays::after {
+  background-image: url("holiday\ \(1\).png");
+  background-size: 35px 45px;
+  display: inline-block;
+  width: 35px;
+  height: 45px;
+  content: "";
+  color: blue;
+}
+
+.akordian-title-cabs::after {
+  background-image: url("electric-car.png");
+  background-size: 35px 45px;
+  display: inline-block;
+  width: 35px;
+  height: 45px;
+  content: "";
+  margin-left: auto;
+}
+
+.active-header-cabs::after {
+  background-image: url("electric-car\ \(1\).png");
+  background-size: 35px 45px;
+  display: inline-block;
+  width: 35px;
+  height: 45px;
+  content: "";
+  color: blue;
+}
+.akordian-title-buses::after {
+  background-image: url("bus-stop.png");
+  background-size: 35px 45px;
+  display: inline-block;
+  width: 35px;
+  height: 45px;
+  content: "";
+  margin-left: auto;
+}
+
+.active-header-buses::after {
+  background-image: url("bus-stop\ \(1\).png");
+  background-size: 35px 45px;
+  display: inline-block;
+  width: 35px;
+  height: 45px;
+  content: "";
+  color: blue;
+}
+.akordian-title-forexs::after {
+  background-image: url("exchange.png");
+  background-size: 35px 45px;
+  display: inline-block;
+  width: 35px;
+  height: 45px;
+  content: "";
+  margin-left: auto;
+}
+
+.active-header-forexs::after {
+  background-image: url("exchange\ \(1\).png");
+  background-size: 35px 45px;
+  display: inline-block;
+  width: 35px;
+  height: 45px;
+  content: "";
+  color: blue;
+}
+
+.akordian-answer {
+  max-height: 0;
+  overflow: hidden;
+  transition: 1000ms ease max-height;
+  padding-top: 28px;
+}
+
+/* Train Booking CSS */
